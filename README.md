@@ -3,7 +3,7 @@
 ### 使用方法
 ####1、安装扩展
 ```
-composer require gzhantao/api-doc
+composer require gzhantao/api-doc dev-master
 ```
 
 ####2、配置参数
