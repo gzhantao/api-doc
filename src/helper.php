@@ -52,11 +52,11 @@ function http_request($url, $cookie, $data = array(), $method = array(), $header
             break;
         case 'POST':
             curl_setopt($curl, CURLOPT_POST, true);
-            curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+            curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data));
             break;
         case 'PUT':
             curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'PUT');
-            curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+            curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data));
             break;
         case 'DELETE':
             curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'DELETE');
